@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Welcome to my site</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<link href="css/style.css" rel="stylesheet" media="screen">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />
-</head>
+		<title>Welcome to my site</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="./css/font-awesome.min.css">
+		<link href="main.css" rel="stylesheet" media="screen">	
+		<!-- resp 
+		<link href="responsive.css" rel="stylesheet" media="screen">	
+		-->
+		<!-- Elastic Slider -->
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />
+        
+		
+	</head>
 
-<body>	
-		<header class="header_area">
+	<body>
+	
+	
+		<div class="header_area">
 			<div class="fix header">
 				<div class="logo fix floatleft">
 					<a href="#"><h1>LOVE<span>BLOG</span></h1></a>
@@ -18,24 +28,35 @@
 				<div class="mainmenu floatright">
 					<ul id="nav">
 						<li><a href="index.html" class="active">Home</a></li>
-						<li><a href="single.html">About us</a></li>
+						<li><a href="about-us.html">About us</a></li>
 						<li><a href="blog.html">Blog</a></li>
 						<li><a href="portfolio.html">Portfolio</a></li>
 						<li><a href="contact.html">Contact us</a></li>
 					</ul>
 				</div>
 			</div>
-		</header>
-		<header class="header_bottom_area"></header>
+		</div>
+		<div class="header_bottom_area"></div>
 		<div class="main_content_area fix">
 		<div class="fix content_area structure">
 			<div class="fix slider_area">
-                <div id="ei-slider" class="ei-slider">
-                    <div class="ei-slider-large">
-						<img src="images/slider.jpg" alt="image06"/>
-                    </div>
-                </div>
+			<!--	<img src="images/slider.jpg" alt="slider" title="slider"/> -->
 			
+			<!-- Elastic Slider-->
+                <div id="ei-slider" class="ei-slider">
+                    <ul class="ei-slider-large">
+						<li>
+                            <img src="images/slider.jpg" alt="image06"/>
+                            <div class="ei-title">
+                                <h2>Passionate</h2>
+                                <h3>Seeker</h3>
+                            </div>
+                        </li>
+                        
+                    </ul><!-- ei-slider-large -->
+                    
+                </div><!-- ei-slider -->
+			<!--End Elastic Slider-->
 			
 			
 			</div>
@@ -161,6 +182,71 @@
 			</div>
 		</div>
 	
-		<script src="js/jquery-min.js"></script>						
-</body>
+		<!-- Elastic Slider-->
+		<script src="js/jquery-min.js"></script>	
+        <script type="text/javascript" src="js/jquery.eislideshow.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('#ei-slider').eislideshow({
+					animation			: 'center',
+					autoplay			: true,
+					slideshow_interval	: 3000,
+					titlesFactor		: 0
+                });
+            });
+        </script>
+		
+		<!-- Responsive navigation-->
+		<script type="text/javascript" src="js/selectnav.min.js"></script>
+		<script type="text/javascript">
+			selectnav('nav', {
+			  label: '-Navigation-',
+			  nested: true,
+			  indent: '-'
+			});
+		</script>
+		
+		<!-- Placeholder actived in all major browsers -->
+			
+				<script type="text/javascript">
+					$(function() {
+						var input = document.createElement("input");
+						if(('placeholder' in input)==false) { 
+							$('[placeholder]').focus(function() {
+								var i = $(this);
+								if(i.val() == i.attr('placeholder')) {
+									i.val('').removeClass('placeholder');
+									if(i.hasClass('password')) {
+										i.removeClass('password');
+										this.type='password';
+									}			
+								}
+							}).blur(function() {
+								var i = $(this);	
+								if(i.val() == '' || i.val() == i.attr('placeholder')) {
+									if(this.type=='password') {
+										i.addClass('password');
+										this.type='text';
+									}
+									i.addClass('placeholder').val(i.attr('placeholder'));
+								}
+							}).blur().parents('form').submit(function() {
+								$(this).find('[placeholder]').each(function() {
+									var i = $(this);
+									if(i.val() == i.attr('placeholder'))
+										i.val('');
+								})
+							});
+						}
+					}); 
+				</script>
+				
+<!--
+
+This Template is designed by WpFreeware.com Team, You are allowed to change anything you like.
+Find out More Awesome template at http://www.WpFreeware.com.
+
+-->				
+	</body>
 </html>
