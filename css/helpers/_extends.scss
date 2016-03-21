@@ -1,0 +1,46 @@
+// Extends 
+
+
+//@extend-elements
+
+//input[type=submit]h1, h2, h3, h4, h5, h6
+%extend_1 {
+	font-weight: normal;
+	margin: 0 0 15px;
+	font-family: $font_0;
+}
+
+
+//.single_blog_post, .single_work
+%extend_2 {
+	margin-bottom: 30px;
+	width: 220px;
+	margin-left: 18px;
+}
+
+
+//.single_blog_post h3, .single_work h3
+%extend_3 {
+	color: $color_mountain_mist_approx;
+	font-size: 16px;
+	margin-bottom: 2px;
+	font-family: $font_0;
+}
+
+
+//.single_blog_post h4, .single_work h4
+%extend_4 {
+	color: $color_red_damask_approx;
+	font-size: 11px;
+	font-family: $font_0;
+}
+
+//.post_pro_img_normal, .post_pro_img_video, .post_pro_img_slider, .post_pro_img_quote, .post_pro_img_attachment
+%extend_5 {
+	height: 75px;
+	left: -85px;
+	position: absolute;
+	width: 75px;
+	display: block;
+}
+

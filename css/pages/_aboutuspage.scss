@@ -1,0 +1,23 @@
+// about us page unique scss
+
+.single_header_title {
+	background: none repeat scroll 0 0 $color_red_damask_approx;
+	min-height: 50px;
+	margin-bottom: 30px;
+	h1 {
+		color: $white;
+		font-family: $font_0;
+		font-size: 24px;
+		line-height: 45px;
+		padding-left: 10px;
+	}
+}
+.single_content_area {
+	position: relative;
+}
+
+.single_main_content {
+	position: relative;
+	width: 670px;
+}
+

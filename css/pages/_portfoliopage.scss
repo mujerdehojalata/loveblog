@@ -1,0 +1,158 @@
+// portfolio 
+
+.portfolio-content {
+	width: 940px;
+}
+.portfolio-area {
+	width: 940px;
+	li {
+		width: 220px;
+	}
+}
+.home-portfolio-text {
+	width: 214px;
+}
+
+.filtering_menu {
+	margin-bottom: 30px;
+	ul {
+		list-style: none outside none;
+		margin: 0;
+		padding: 0;
+		li {
+			float: left;
+			margin-right: 15px;
+			a {
+				color: $color_mountain_mist_approx;
+				display: block;
+				font-family: $font_0;
+				padding: 10px 15px;
+				&:hover {
+					color: $white !important;
+					background: $color_red_damask_approx;
+				}
+			}
+		}
+	}
+}
+
+.portfolio-area {
+	min-height: 500px !important;
+	li {
+		float: left;
+		margin: 0 3px 20px 0;
+		overflow: hidden;
+		padding: 5px;
+	}
+}
+.portfolio-categ {
+	margin-bottom: 60px;
+	list-style: none;
+	overflow: hidden;
+	li {
+		float: left;
+		margin-right: 10px;
+		&:first-child {
+			font-family: $font_0;
+			font-size: 20px;
+			padding: 10px 15px 10px 0;
+		}
+		a {
+			color: $color_mountain_mist_approx;
+			display: block;
+			padding: 10px 15px;
+			font-family: $font_0;
+			&:hover {
+				background: $color_red_damask_approx;
+				color: $white;
+			}
+		}
+		&.active a {
+			background: $color_red_damask_approx;
+			color: $white;
+		}
+	}
+}
+.post-title-portfolio {
+	margin-bottom: 0;
+}
+.home-portfolio-text {
+	border: 1px solid $color_alto_approx;
+	padding-left: 8px;
+	a {
+		color: $color_mountain_mist_approx;
+		display: block;
+		font-family: $font_0;
+		font-size: 16px;
+	}
+	p {
+		font-size: 11px;
+		color: $color_red_damask_approx;
+		font-family: $font_0;
+	}
+}
+a {
+	color: $color_olive_drab_approx;
+	text-decoration: none;
+	&:hover {
+		color: $color_olive_drab_approx;
+	}
+}
+.column-clear {
+	clear: both;
+}
+.wrapper {
+	margin: 0 auto;
+	padding: 0;
+	width: 1080px;
+}
+.title-page {
+	font-size: 40px;
+	margin: 50px 0 60px;
+	color: $color_bunker_approx;
+}
+.goto {
+	float: right;
+	width: 130px;
+	margin: -80px 30px 0 0;
+}
+.image-block {
+	display: block;
+	position: relative;
+	img {
+		border: 1px solid $color_quill_gray_approx;
+		background: $white;
+		padding: 1px;
+		&:hover {
+			border: 1px solid $color_red_damask_approx;
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: 0 0 5px $color_red_damask_approx;
+		}
+	}
+}
+
+.act {
+	color: $white !important;
+	background: $color_red_damask_approx;
+}
+.portfolio_related_post {
+	margin-top: 15px;
+	h2 {
+		background: $url_3 repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+		color: $color_red_damask_approx;
+		font-family: $font_0;
+		font-size: 18px;
+		line-height: 18px;
+		margin-left: 140px;
+		margin-bottom: 30px;
+		width: 84.5%;
+		span {
+			margin-left: -140px;
+		}
+	}
+}
+
+.featured {
+	background: $color_red_damask_approx $url_13 no-repeat scroll center;
+}
+

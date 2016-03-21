@@ -1,0 +1,131 @@
+// blog 
+
+
+.single_post {
+	margin-bottom: 50px;
+}
+.post_pro_img_normal {
+	@extend %extend_5;
+	background: $url_5 no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.post_pro_img_video {
+	@extend %extend_5;
+	background: $url_6 no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.post_pro_img_slider {
+	@extend %extend_5;
+	background: $url_7 no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.post_pro_img_quote {
+	@extend %extend_5;
+	background: $url_8 no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.post_pro_img_attachment {
+	@extend %extend_5;
+	background: $url_9 no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.attachment {
+	h2 {
+		color: $color_flame_pea_approx;
+		font-family: $font_0;
+		font-size: 18px;
+		margin-bottom: 0;
+	}
+	h5 {
+		color: $color_mountain_mist_approx;
+		font-family: $font_3;
+		font-size: 10px;
+	}
+	p {
+		padding: 10px;
+	}
+}
+.post_excerpt {
+	margin-top: 20px;
+}
+.post_meta {
+	padding: 10px;
+	width: 180px;
+	span {
+		color: $color_red_damask_approx;
+		font-family: $font_0;
+		font-size: 12px;
+	}
+	p {
+		color: $color_mountain_mist_approx;
+		margin-bottom: 10px;
+	}
+}
+.excerpt {
+	padding: 10px;
+	width: 450px;
+	h2 {
+		font-family: $font_0;
+		font-size: 18px;
+		color: $color_red_damask_approx;
+	}
+	p {
+		color: $color_cape_cod_approx;
+		margin-bottom: 10px;
+	}
+}
+.post_border_bottom {
+	background: $url_10 repeat scroll 0 0 rgba(0, 0, 0, 0);
+	height: 13px;
+	margin-top: 25px;
+}
+.quote {
+	background: $url_11 repeat scroll 0 0 rgba(0, 0, 0, 0);
+	padding: 20px;
+	margin-bottom: 55px;
+	p {
+		background: $url_12 no-repeat scroll left top rgba(0, 0, 0, 0);
+		padding-left: 35px;
+		padding-top: 15px;
+	}
+}
+.pagination {
+	margin-top: 30px;
+	ul {
+		list-style: none outside none;
+		margin: 0;
+		padding: 0;
+		li {
+			float: left;
+			margin-left: 10px;
+			&:first-child {
+				margin-left: 0;
+			}
+			a {
+				display: block;
+				color: $white;
+				background: $color_red_damask_approx;
+				padding: 8px 15px;
+				font-family: $font_0;
+				&:hover {
+					background: $color_rose_bud_approx;
+				}
+			}
+		}
+	}
+}
+
+.post_quote {
+	padding: 30px;
+	p {
+		border-left: 10px solid $color_red_damask_approx;
+		padding-left: 15px;
+		&:first-letter {
+			font-size: 250%;
+			color: $color_red_damask_approx;
+		}
+	}
+}
+.author_img {
+	background: none repeat scroll 0 0 $white;
+	border: 1px solid $color_alto_approx;
+	float: left;
+	margin-bottom: 15px;
+	margin-right: 15px;
+	padding: 3px;
+}

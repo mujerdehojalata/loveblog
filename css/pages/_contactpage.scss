@@ -1,0 +1,62 @@
+// contact page
+
+.cf_container {
+	margin-top: 35px;
+}
+
+#googleMap {
+	width: 670px;
+	height: 300px;
+}
+
+.address {
+	width: 239px;
+	p {
+	}
+	span {
+		color: $color_red_damask_approx;
+	}
+}
+.cf {
+	width: 420px;
+	form {
+	}
+}
+.cf_txt {
+	border: 1px solid $color_red_damask_approx !important;
+	height: 30px;
+	width: 60%;
+	outline: none;
+}
+.cf_email {
+	height: 40px;
+	width: 63%;
+	padding-left: 5px;
+	border: 1px solid $color_red_damask_approx;
+	outline: none;
+}
+.cf_msg {
+	border: 1px solid $color_red_damask_approx;
+	height: 200px;
+	overflow: auto;
+	font-size: 14px;
+	outline: none;
+	width: 100%;
+}
+.cf_submit {
+	background: none repeat scroll 0 0 $color_red_damask_approx;
+	border: medium none;
+	color: $white;
+	font-family: $font_0;
+	font-size: 23px;
+	height: 45px;
+	outline: medium none;
+	width: 103%;
+	cursor: pointer;
+	&:hover {
+		transition: background 0.5s ease;
+		background: $white;
+		color: $color_red_damask_approx;
+		border: 1px solid $color_red_damask_approx;
+	}
+}

@@ -1,0 +1,87 @@
+// common css 
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: $font_1, $font_2;
+	font-size: 14px;
+	line-height: 20px;
+	color: $color_cape_cod_approx;
+}
+a {
+	color: $black;
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+}
+input[type=text] {
+	border: 1px solid $color_alto_approx;
+	padding: 5px;
+}
+input[type=password] {
+	border: 1px solid $color_alto_approx;
+	padding: 5px;
+}
+textarea {
+	border: 1px solid $color_alto_approx;
+	padding: 5px;
+}
+input[type=submit] h1 {
+	@extend %extend_1;
+}
+h2 {
+	@extend %extend_1;
+	font-size: 25px;
+	line-height: 30px;
+}
+h3 {
+	@extend %extend_1;
+}
+h4 {
+	@extend %extend_1;
+}
+h5 {
+	@extend %extend_1;
+}
+h6 {
+	@extend %extend_1;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+p {
+	margin-bottom: 20px;
+}
+.alignleft {
+	float: left;
+	margin-left: 0;
+}
+.aligncenter {
+	display: block;
+	margin: 10px auto;
+}
+.alignright {
+	float: right;
+	margin-left: 10px;
+}
+.floatleft {
+	float: left;
+}
+.floatright {
+	float: right;
+}
+.structure {
+	display: block;
+	margin: 0 auto;
+	transition: all 1.3s ease 0s;
+}
+.fix {
+	overflow: hidden;
+}
+
+
+
+
